@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <title>
+    To-do List
+  </title>
+  <style>
+    html {
+      font-family: "Avenir Next", Helevetica, sans-serif;
+      text-align: center;
+    }
+
+    body {
+      display: grid;
+      max-width: 550px;
+      margin: 0 auto;
+      justify-content: left;
+    }
+
+    input {
+      padding-top: 30px;
+      width: 550px;
+      height: 2em;
+      font-size: 40px;
+      border: 0;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    li {
+      text-align: left;
+      font-size: 40px;
+      list-style: none;
+      margin: 0;
+    }
+
+    li:hover {
+      text-decoration: line-through;
+    }
+
+    li::before {
+      content: '-';
+    }
+  </style>
+</head>
+
+<body>
+  <input id="input" placeholder="Add things to be done !!">
+  <div>
+    <ul id="list">
+      <!-- <li id="li" onclick="trackItemCompletion(this)"><li> -->
+    </ul>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
